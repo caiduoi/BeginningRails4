@@ -14,5 +14,5 @@ users = [
   ["user5@gmail.com", "123456"],
 ]
 users.each do |u|
-  User.create(email: u[0], password: u[1])
+  User.create(email: u[0], password: u[1], password_confirmation: u[1])
 end
